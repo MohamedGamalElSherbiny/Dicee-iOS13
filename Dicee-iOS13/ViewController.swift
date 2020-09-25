@@ -18,9 +18,8 @@ class ViewController: UIViewController {
     // Defining the roll button
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        let imageVariable = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
-        diceImageViewOne.image = imageVariable[Int.random(in: 0...5)]
-        diceImageViewTwo.image = imageVariable[Int.random(in: 0...5)]
+        let diceArray = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]  // Dice images
+        diceImageViewOne.image = diceArray.randomElement()  // randomize the left side dice
+        diceImageViewTwo.image = diceArray.randomElement()  // randomize the right side dice
     }
-    
 }

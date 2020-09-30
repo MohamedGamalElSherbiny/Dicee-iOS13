@@ -23,14 +23,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="L73-FM-GDd">
                                 <rect key="frame" x="112" y="418.5" width="190" height="59"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn by Making iOS Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFb-dy-kJE">
+                                <rect key="frame" x="106.5" y="497.5" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hDV-2r-SpX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3gm-Ur-Pup"/>
+                            <constraint firstItem="jFb-dy-kJE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CCh-PA-hrC"/>
                             <constraint firstAttribute="trailing" secondItem="hDV-2r-SpX" secondAttribute="trailing" constant="-30" id="LDV-Vq-qsd"/>
                             <constraint firstItem="L73-FM-GDd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nwv-Oe-fvK"/>
                             <constraint firstItem="hDV-2r-SpX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-30" id="iqC-Sq-avD"/>
+                            <constraint firstItem="jFb-dy-kJE" firstAttribute="top" secondItem="L73-FM-GDd" secondAttribute="bottom" constant="20" id="qcL-T0-8wV"/>
                             <constraint firstAttribute="bottom" secondItem="hDV-2r-SpX" secondAttribute="bottom" id="wck-jx-kOP"/>
                             <constraint firstItem="L73-FM-GDd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="yfh-V9-lvu"/>
                         </constraints>
